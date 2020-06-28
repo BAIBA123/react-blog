@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+import Header from './components/Header'
+import Footer from './components/Footer'
+import {Route, Switch } from 'react-router-dom'
+import Home from './pages/home/Index'
+import Post from './pages/post/Index'
+import Read from './pages/read/Index'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className="app-box">
+        <Header></Header>
+
+        {/* <div className="px-4 md:px-8 max-w-1200px mx-auto mt-12"> */}
+        <div className="mt-12">
+          <Switch>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/post" component={Post}></Route>
+            <Route path="/read" component={Read}></Route>
+          </Switch>
+        </div>
+        
+        <Footer></Footer>
+      </div>
+    );
+  }
 }
-
-export default App;

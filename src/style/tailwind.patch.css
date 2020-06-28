@@ -1,0 +1,9 @@
+.menu-active {
+  background-color: #e2e8f0;
+}
+
+.bg-hazy-100 {
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(255, 255, 255, .8);
+}
