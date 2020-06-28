@@ -16,7 +16,7 @@
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/style/tailwind.css -o src/style/index.css", 
+    "build:css": "postcss src/style/tailwind.css -o src/style/index.css",
     "watch:css": "postcss src/style/tailwind.css -o src/style/index.css"
   },
   "eslintConfig": {
@@ -36,8 +36,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
+    "axios": "^0.19.2",
     "postcss-cli": "^7.1.1",
     "postcss-loader": "^3.0.0",
+    "swiper": "^5.4.5",
     "tailwindcss": "^1.4.6"
   }
 }

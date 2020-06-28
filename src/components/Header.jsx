@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 export default class Header extends Component{
   state = {
@@ -31,11 +31,16 @@ export default class Header extends Component{
       <div className="header-box h-12 shadow fixed top-0 left-0 w-full z-10 bg-hazy-100">
         <div className="px-4 md:hidden flex items-center justify-between h-full">
           <i className="iconfont icon-Menu"></i>
-          <h3>mingge</h3>
+          <Link to="/home">
+            <h2>mignge</h2>
+          </Link>
           <i className="iconfont icon-search"></i>
         </div>
         <div className="px-8 hidden md:flex h-full items-center max-w-1200px mx-auto">
-          <h2 className="mr-10">mignge</h2>
+          {/* <h2 className="mr-10">mignge</h2> */}
+          <Link to="/home">
+            <h2 className="mr-10">mignge</h2>
+          </Link>
           <ul className="flex text-sm">
             {
               menuList.map((item, index) => {

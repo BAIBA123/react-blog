@@ -45,7 +45,8 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: Object.assign({'1200px': '1200px'}, base, extra, percent),
-      width: Object.assign({}, base, extra, percent)
+      width: Object.assign({}, base, extra, percent),
+      height: Object.assign({}, base, extra, percent)
     },
   },
   variants: {},
