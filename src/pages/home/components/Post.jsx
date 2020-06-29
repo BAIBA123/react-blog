@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import PartTitle from "./PartTitle";
 
 export default class Post extends Component {
   render() {
     const data = this.props.data;
     return (
       <div>
-        <PartTitle title={{ en: "UPDATE", zh: "最新动态" }}></PartTitle>
 
         {/* 文章列表 */}
         <div className="flex flex-wrap">
@@ -16,6 +14,7 @@ export default class Post extends Component {
                 key={item.en}
                 className="flex w-full md:w-1/2 xl:w-1/3 px-2 mb-4 cursor-pointer"
               >
+                
                 <div className="left w-1/5">
                   <h2>
                     {item.zh}
@@ -23,6 +22,7 @@ export default class Post extends Component {
                   </h2>
                   <p className="text-xs text-gray-500">{item.en}</p>
                 </div>
+
                 <div className="right w-4/5">
                   {item.list.map(val => {
                     return (

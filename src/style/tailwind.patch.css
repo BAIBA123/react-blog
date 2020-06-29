@@ -1,3 +1,8 @@
+* {
+  color: #182026;
+  box-sizing: border-box;
+}
+
 .menu-active {
   background-color: #e2e8f0;
 }
@@ -6,4 +11,8 @@
   backdrop-filter: saturate(180%) blur(10px);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   background-color: rgba(255, 255, 255, .8);
+}
+
+.blur-100 {
+  filter: blur(10px);
 }

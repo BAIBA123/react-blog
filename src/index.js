@@ -5,6 +5,8 @@ import {BrowserRouter} from 'react-router-dom'
 import './style/index.css'
 import './style/tailwind.patch.css'
 import './icons/iconfont.css'
+import 'normalize.css'
+
 
 ReactDOM.render(
   <React.StrictMode>

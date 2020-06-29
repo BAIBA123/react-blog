@@ -15,13 +15,12 @@ export default class App extends Component {
 
         <div className="mt-12">
           <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/post" component={Post}></Route>
-            <Route path="/read" component={Read}></Route>
-            <Route path="/404" component={NotFound}></Route>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/post" component={Post}></Route>
+            <Route exact path="/read" component={Read}></Route>
+            <Route exact path="/404" component={NotFound}></Route>
 
-            <Redirect exact from="/" to="/home"></Redirect>
-            <Redirect from="*" to="/404"></Redirect>
+            <Redirect exact from="/*" to="/404"></Redirect>
           </Switch>
         </div>
         

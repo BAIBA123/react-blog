@@ -1,27 +1,19 @@
 import React, {Component} from "react";
 import {NavLink, Link} from 'react-router-dom'
+import axios from 'axios'
 
 export default class Header extends Component{
   state = {
-    menuList: [
-      
-      {
-        label: '文章',
-        link: '/post'
-      },
-      {
-        label: '阅读',
-        link: '/read'
-      },
-      {
-        label: '库藏',
-        link: '/store'
-      },
-      {
-        label: '应用',
-        link: '/app'
-      },
-    ]
+    menuList: []
+  }
+
+  getInit = async () => {
+    const res = await axios.get('http://127.0.0.1:3000/menu')
+    this.setState({menuList: res.data.menuList})
+  }
+
+  componentDidMount() {
+    this.getInit()
   }
 
   render () {
@@ -29,16 +21,18 @@ export default class Header extends Component{
 
     return (
       <div className="header-box h-12 shadow fixed top-0 left-0 w-full z-10 bg-hazy-100">
+        {/* 小屏 */}
         <div className="px-4 md:hidden flex items-center justify-between h-full">
           <i className="iconfont icon-Menu"></i>
-          <Link to="/home">
+          <Link to="/">
             <h2>mignge</h2>
           </Link>
           <i className="iconfont icon-search"></i>
         </div>
+        
+        {/* 大屏 */}
         <div className="px-8 hidden md:flex h-full items-center max-w-1200px mx-auto">
-          {/* <h2 className="mr-10">mignge</h2> */}
-          <Link to="/home">
+          <Link to="/">
             <h2 className="mr-10">mignge</h2>
           </Link>
           <ul className="flex text-sm">
