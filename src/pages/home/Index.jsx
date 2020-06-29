@@ -11,6 +11,7 @@ import MyLink from './components/Link'
 
 export default class Home extends Component {
   state = {
+    loading: true,
     mainPics: [],
     post: [],
     projects: [],
@@ -18,7 +19,10 @@ export default class Home extends Component {
   };
 
   getInit = async () => {
+    // this.setState({loading: true})
     const res = await axios.get("http://127.0.0.1:3000/home");
+    // this.setState({loading: false})
+
     const {post, mainPics, projects, links} = res.data
     this.setState({ post, mainPics, projects, links });
     
@@ -44,7 +48,7 @@ export default class Home extends Component {
   }
 
   render() {
-    const {mainPics, links, projects} = this.state
+    const { mainPics, links, projects, post, loading} = this.state
 
     return (
       <div className="home-box">
@@ -72,7 +76,7 @@ export default class Home extends Component {
           {/* 文章 */}
           <div className="mb-10">
             <PartTitle title={{ en: "UPDATES", zh: "最新动态" }}></PartTitle>
-            <Post data={this.state.post}></Post>
+            <Post data={post} loading={loading}></Post>
           </div>
 
           {/* 笔记 */}
@@ -84,13 +88,13 @@ export default class Home extends Component {
           {/* 项目 */}
           <div className="mb-10">
             <PartTitle title={{ en: "PROJECTS", zh: "我的项目" }}></PartTitle>
-            <MyProject projects={projects}></MyProject>
+            <MyProject projects={projects} loading={loading}></MyProject>
           </div>
 
           {/* 友链 */}
           <div className="mb-10">
             <PartTitle title={{ en: "LINKS", zh: "友情链接" }}></PartTitle>
-            <MyLink links={links}></MyLink>
+            <MyLink links={links} loading={loading}></MyLink>
           </div>
         </div>
       </div>
