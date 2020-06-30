@@ -71,3 +71,30 @@ html {
   font-weight: 700;
   color: #106ba3;
 }
+
+.cate.active {
+  color: #106ba3;
+  font-weight: 500;
+  position: relative;
+}
+
+.cate.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background-color: #106ba3;
+}
+
+.cate-box {
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.tag.active {
+  background-color: #106ba3;
+  color: #fff;
+}

@@ -16,7 +16,7 @@ export default class Project extends Component {
               <div className="w-1/2 md:w-1/4 xl:1/6 px-2 mb-4" key={item.id}>
                 <div>
                   <img
-                    className="block rounded-md shadow-lg mb-2"
+                    className="block rounded-md shadow-lg mb-2 max-w-full max-h-full"
                     src={item.pic}
                     alt=""
                   />

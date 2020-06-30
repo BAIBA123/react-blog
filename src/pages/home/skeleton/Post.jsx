@@ -8,9 +8,9 @@ export default class Post extends Component{
   render () {
     const {list} = this.state
     
-    let ele = list.map(item => {
+    let ele = list.map((item, index) => {
       return (
-        <div className="flex w-full md:w-1/2 xl:w-1/3 mb-8">
+        <div className="flex w-full md:w-1/2 xl:w-1/3 mb-8" key={index}>
           <div className="w-1/5">
             <div className="sk h-4 mb-2 w-3/4"></div>
             <div className="sk h-4 w-1/2"></div>
