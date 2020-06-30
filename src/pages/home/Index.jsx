@@ -11,7 +11,7 @@ import MyLink from './components/Link'
 
 export default class Home extends Component {
   state = {
-    loading: true,
+    loading: false,
     mainPics: [],
     post: [],
     projects: [],
@@ -19,9 +19,9 @@ export default class Home extends Component {
   };
 
   getInit = async () => {
-    // this.setState({loading: true})
+    this.setState({loading: true})
     const res = await axios.get("http://127.0.0.1:3000/home");
-    // this.setState({loading: false})
+    this.setState({loading: false})
 
     const {post, mainPics, projects, links} = res.data
     this.setState({ post, mainPics, projects, links });
