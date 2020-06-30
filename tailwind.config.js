@@ -50,10 +50,10 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: Object.assign({'1200px': '1200px', '800px': '800px'}, base, extra, percent),
-      width: Object.assign({}, base, extra, percent),
+      width: Object.assign({'300px': '300px', '800px': '800px'}, base, extra, percent),
       height: Object.assign({}, base, extra, percent),
       margin: Object.assign({'600px': '600px'}),
-      inset: Object.assign(percent),
+      inset: Object.assign({}, percent),
     }
   },
   variants: {},

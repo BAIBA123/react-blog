@@ -32,3 +32,42 @@
     background-position: 0 50%;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.a-content h3 {
+  border-bottom: 3px solid #eee;
+  padding-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.a-content h3::before {
+  display: block;
+  content: " ";
+  height: 64px;
+  margin-top: -64px;
+  visibility: hidden;
+}
+
+.a-content p {
+  line-height: 1.8rem;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.subtitle-li {
+  border-left: 2px solid #eee;
+}
+
+.subtitle-li.active {
+  border-left: 2px solid #106ba3;
+}
+
+.subtitle-li.active a {
+  font-weight: 700;
+  color: #106ba3;
+}
