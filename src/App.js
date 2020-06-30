@@ -8,6 +8,7 @@ import PostList from './pages/post/List'
 import PostDetail from './pages/post/Detail'
 import Read from './pages/read/Index'
 import NotFound from './pages/404/Index'
+import Test from './pages/test/Index'
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,8 @@ export default class App extends Component {
             <Route exact path="/post/detail/:id" component={PostDetail}></Route>
             <Route exact path="/read" component={Read}></Route>
             <Route exact path="/404" component={NotFound}></Route>
+            <Route exact path="/404" component={NotFound}></Route>
+            <Route exact path="/test" component={Test}></Route>
 
             <Redirect exact from="/*" to="/404"></Redirect>
           </Switch>
