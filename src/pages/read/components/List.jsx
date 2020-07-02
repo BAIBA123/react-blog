@@ -21,7 +21,8 @@ export default class List extends Component{
 
     return (
       <div className="mt-10">
-        <div className="cate-box">
+        {/* 分类和标签 */}
+        <div className="cate-box mb-8">
           <ul className="flex text-base mb-8">
             {
               category.map((item, index) => {
@@ -48,6 +49,33 @@ export default class List extends Component{
                 )
               })
             }
+          </div>
+        </div>
+
+        <div className="book-list">
+          <div className="mb-8">
+            <span className="text-3xl text-gray-700 font-medium">1000</span>
+            <span className="text-3xl text-gray-400 font-medium">books</span>
+          </div>
+          <div className="flex">
+
+            <div className="w-full md:w-1/2 xl:w-1/4">
+              <div className="flex">
+                <div className="w-20 mr-2">
+                  <img className="max-w-full max-h-full" src="https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l" alt=""/>
+                </div>
+                <div>
+                  <p>古德里安传 经典随身读</p>
+                  <p className="text-gray-600">陈辉</p>
+                </div>
+              </div>
+              <div className="flex">
+                <span>传记</span>
+                <i className="ml-auto iconfont icon-bookmark"></i>
+                <i className="iconfont icon-more"></i>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
