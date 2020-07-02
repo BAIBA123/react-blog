@@ -352,5 +352,51 @@
         "list": ["尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利", "尤瓦尔·赫拉利"]
       }
     ]
+  },
+  "books": {
+    "books": [
+      {
+        "id": 1,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      },
+      {
+        "id": 2,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      },
+      {
+        "id": 3,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      },
+      {
+        "id": 4,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      },
+      {
+        "id": 5,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      },
+      {
+        "id": 6,
+        "name": "权力下的冰与火：永不落幕的肯尼迪王朝",
+        "author": "美/达尔文·波特 美/丹福思·普",
+        "pic": "https://cover.read.duokan.com/mfsv2/download/s010/p01ErReOkrL7/yWDlGpOkesxIUz.jpg!l",
+        "tags": ["传记", "政治"]
+      }
+    ]
   }
 }

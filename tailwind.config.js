@@ -54,6 +54,7 @@ module.exports = {
       height: Object.assign({}, base, extra, percent),
       margin: Object.assign({'600px': '600px'}),
       inset: Object.assign({}, percent),
+      rounded: Object.assign({})
     }
   },
   variants: {},
