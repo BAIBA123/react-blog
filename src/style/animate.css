@@ -1,0 +1,36 @@
+/* mask 动画 */
+.drawer-enter.drawer-mask {
+  opacity: 0;
+}
+.drawer-enter-active.drawer-mask {
+  opacity: 1;
+  transition: all .3s ease-in;
+}
+.drawer-exit.drawer-mask {
+  opacity: 1;
+}
+.drawer-exit-active.drawer-mask {
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+/* 内容动画 */
+.drawer-enter .drawer {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.drawer-enter-active .drawer {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all .3s ease-in;
+}
+.drawer-exit .drawer {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.drawer-exit-active .drawer {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .3s ease-out;
+}
+

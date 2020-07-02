@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {Tooltip} from 'antd'
-import { Drawer } from 'antd';
-
+import Drawer from '../../../components/Drawer'
 
 export default class List extends Component {
   state = {
@@ -18,9 +17,9 @@ export default class List extends Component {
     this.setState({ tagIndex });
   };
 
-  toggleDrawer = () => {
+  toggleDrawer = (flag) => {
     let {showDrawer} = this.state
-    showDrawer = !showDrawer
+    showDrawer = flag
     this.setState({showDrawer})
   }
 
@@ -31,16 +30,7 @@ export default class List extends Component {
     return (
       <div className="mt-10">
         
-        <Drawer
-          title="Basic Drawer"
-          placement="left"
-          closable={false}
-          onClose={this.toggleDrawer}
-          visible={showDrawer}
-          key="left"
-        >
-          <div className="w-1/2"></div>
-        </Drawer>
+        <Drawer showDrawer={showDrawer} toggleDrawer={this.toggleDrawer}></Drawer>
 
         {/* 分类和标签 */}
         <div className="cate-box mb-8">
@@ -108,7 +98,7 @@ export default class List extends Component {
                           return <span key={index} className="mr-2 text-gray-600">{val}</span>
                         })
                       }
-                      <i onClick={this.toggleDrawer} className="iconfont icon-bookmark cursor-pointer bg-gray-400 px-2 rounded-lg mr-2 h-5 ml-auto hover:bg-gray-200"></i>
+                      <i onClick={() => this.toggleDrawer(true)} className="iconfont icon-bookmark cursor-pointer bg-gray-400 px-2 rounded-lg mr-2 h-5 ml-auto hover:bg-gray-200"></i>
                       <Tooltip title="prompt text" placement="topRight">
                         <i className="iconfont icon-more cursor-pointer bg-gray-400 px-2 rounded-lg h-5 hover:bg-gray-200"></i>
                       </Tooltip>

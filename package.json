@@ -9,6 +9,7 @@
     "animate.css": "^4.1.0",
     "antd": "^4.3.5",
     "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.13.1",
