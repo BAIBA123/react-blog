@@ -34,3 +34,81 @@
   transition: all .3s ease-out;
 }
 
+
+/* top组件 */
+.top-enter {
+  opacity: 0;
+  transform: translateY(100px);
+}
+.top-enter-active {
+  animation: topIn .8s forwards;
+}
+.top-exit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.top-exit-active {
+  animation: topOut .8s forwards;
+}
+
+@keyframes topIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scaleY(0.8) scaleX(1.4);
+  }
+  70%{
+    opacity: 1;
+    transform: scaleY(1.2) scaleX(0.8);
+  }
+  80% {
+    opacity: 1;
+    transform: scaleY(0.8) scaleX(1.1);
+  }
+  90%{
+    opacity: 1;
+    transform: scaleY(1.1) scaleX(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes topOut {
+  0% {
+    opacity: 1;
+    transform: scaleY(0.8) scaleX(1.4);
+  }
+  20%{
+    opacity: 1;
+    transform: scaleY(1.2) scaleX(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scaleY(0.8) scaleX(1.1);
+  }
+  40%{
+    opacity: 1;
+    transform: scaleY(1.1) scaleX(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}

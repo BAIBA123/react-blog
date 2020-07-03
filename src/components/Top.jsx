@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {CSSTransition} from 'react-transition-group'
+import '../style/animate.css'
 
 export default class Top extends Component{
 
@@ -24,21 +26,21 @@ export default class Top extends Component{
   }
 
   render () {
-    let ele
     const {show} = this.state
-
-    if (show) {
-      ele = (
+    
+    return (
+      <CSSTransition
+        in={show}
+        timeout={ 1000 }
+        classNames='top'
+        unmountOnExit
+      >
         <div 
           onClick={this.top}
-          className="fixed xl:left-1/2 ml-600px flex items-center justify-center bottom-0 right-0 mr-10 mb-10 mr-4 border cursor-pointer h-12 w-12 bg-white rounded-full shadow-md">
+          className="fixed xl:left-1/2 ml-600px flex items-center justify-center bottom-0 right-0 mr-10 mb-10 border cursor-pointer h-12 w-12 bg-white rounded-full shadow-md">
           <i className="iconfont icon-arrow-up"></i>
         </div>
-      )
-    } else {
-      ele = ''
-    }
-
-    return <div>{ele}</div>
+      </CSSTransition>
+    )
   }
 }

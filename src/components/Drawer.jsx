@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import '../style/animate.css'
 import {CSSTransition} from 'react-transition-group'
+import '../style/animate.css'
 
 export default class Drawer extends Component {
 

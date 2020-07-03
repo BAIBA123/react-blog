@@ -39,7 +39,7 @@ export default class Home extends Component {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+      }
     });
   };
 
@@ -68,8 +68,8 @@ export default class Home extends Component {
             }
           </div>
           <div className="swiper-pagination"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev hidden md:block"></div>
+          <div className="swiper-button-next hidden md:block"></div>
         </div>
         
         <div className="px-4 md:px-8 max-w-1200px mx-auto">

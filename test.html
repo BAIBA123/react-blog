@@ -6,24 +6,25 @@
   <title>Document</title>
 </head>
 <body>
-  <p></p>
+  <div class="test">
+    <h1 >11</h1>
+    <h1>22</h1>
+    <h1>33</h1>
+    <p>
+      <span>111</span>
+      <span>222</span>
+    </p>
+  </div>
 </body>
-<style>
-  p {
-    height: 18px;
-    width: 500px;
-    background: linear-gradient(90deg,#f2f2f2 25%,#e6e6e6 37%,#f2f2f2 63%);
-    background-size: 400% 100%;
-    animation: ant-skeleton-loading 1.4s ease infinite;
+<script>
+  window.onload = function () {
+    let a = document.querySelector('.test').childNodes[0].nodeValue
+    console.log(a)
   }
-
-  @keyframes ant-skeleton-loading {
-    0% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
+</script>
+<style>
+  .active {
+    color: red;
   }
 </style>
 </html>
