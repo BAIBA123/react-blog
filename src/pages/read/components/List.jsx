@@ -30,7 +30,27 @@ export default class List extends Component {
     return (
       <div className="mt-10">
         
-        <Drawer showDrawer={showDrawer} toggleDrawer={this.toggleDrawer}></Drawer>
+        <Drawer showDrawer={showDrawer} toggleDrawer={this.toggleDrawer}>
+          <div>
+            <div className="flex mb-8">
+              <div className="max-w-32 w-1/5 mr-4 flex-shrink-0" >
+                <img src="https://cover.read.duokan.com/mfsv2/download/fdsc3/p0118JE5m3Xw/ZZDPloXrPJm31O.jpg!l" alt=""/>
+              </div>
+              <div className="w-4/5">
+                <p className="text-lg text-gray-700 truncate mb-1">权力下的冰与火：永不落幕的肯尼迪王朝权力下的冰与火：永不落幕的肯尼迪王朝</p>
+                <p className="text-sm text-gray-500">美/达尔文·波特 美/丹福思·普林斯</p>
+              </div>
+            </div>
+            <div className="border-b border-gray-300 border-dashed py-3">
+              <div className="flex items-center w-full mb-4">
+                <span className="text-xs text-gray-700">2020-06-15 19:43:13</span>
+                <i className="cursor-pointer iconfont icon-copy ml-auto mr-2 px-1 hover:bg-gray-300"></i>
+                <i className="cursor-pointer iconfont icon-share px-1 hover:bg-gray-300"></i>
+              </div>
+              <p>后来，老乔以109号鱼雷艇事件为题材，投资拍摄了一部电影，他希望通过宣传杰克在“二战”中的英勇表现提升肯尼迪家族的声望和杰克在选民中的形象。</p>
+            </div>
+          </div>
+        </Drawer>
 
         {/* 分类和标签 */}
         <div className="cate-box mb-8">
