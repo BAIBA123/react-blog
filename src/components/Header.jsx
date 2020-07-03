@@ -44,7 +44,7 @@ export default class Header extends Component{
                     key={item.label} 
                     activeClassName="menu-active"
                     className="px-3 py-1 transform -skew-x-6 rounded-sm hover:bg-gray-300 cursor-pointer">
-                    <span className="block transform skew-x-6">{item.label}</span>
+                    <span className="block transform skew-x-6 font-nav">{item.label}</span>
                   </NavLink>
                 )
               })

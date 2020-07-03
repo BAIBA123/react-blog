@@ -1,0 +1,22 @@
+@font-face {  
+  font-family: 'din';   
+  src: url('../util/fonts/din.woff2');
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  font-family: 'nav';   
+  src: url('../util/fonts/nav.woff');
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+
+.font-din {
+  font-family: din;
+}
+
+.font-nav {
+  font-family: nav;
+}
