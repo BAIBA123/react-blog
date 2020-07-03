@@ -25,7 +25,7 @@ export default class Drawer extends Component {
           style={{ backgroundColor: "rgba(0,0,0,.4)" }}
           className="drawer-mask fixed inset-0 z-20"
         >
-          <div className="scrollbar drawer absolute top-0 bottom-0 px-4 py-8 xl:px-12 left-0 w-4/5 md:w-1/2 bg-white overflow-y-scroll">
+          <div className="scrollbar drawer absolute top-0 bottom-0 left-0 w-4/5 md:w-1/2 bg-white overflow-y-scroll">
             {this.props.children}
           </div>
         </div>

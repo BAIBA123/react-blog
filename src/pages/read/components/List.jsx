@@ -31,7 +31,7 @@ export default class List extends Component {
       <div className="mt-10">
         
         <Drawer showDrawer={showDrawer} toggleDrawer={this.toggleDrawer}>
-          <div>
+          <div className="px-4 py-8 xl:px-12">
             <div className="flex mb-8">
               <div className="max-w-32 w-1/5 mr-4 flex-shrink-0" >
                 <img src="https://cover.read.duokan.com/mfsv2/download/fdsc3/p0118JE5m3Xw/ZZDPloXrPJm31O.jpg!l" alt=""/>
