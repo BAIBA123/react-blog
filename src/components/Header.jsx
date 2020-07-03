@@ -33,7 +33,7 @@ export default class Header extends Component{
         {/* 大屏 */}
         <div className="px-8 hidden md:flex h-full items-center max-w-1200px mx-auto">
           <Link to="/">
-            <h2 className="mr-10">mignge</h2>
+            <img className="h-12" src="/logo.png" alt="" />
           </Link>
           <ul className="flex text-sm">
             {
