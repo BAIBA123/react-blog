@@ -37,7 +37,7 @@ export default class Top extends Component{
       >
         <div 
           onClick={this.top}
-          className="fixed xl:left-1/2 ml-600px flex items-center justify-center bottom-0 right-0 mr-10 mb-10 border cursor-pointer h-12 w-12 bg-white rounded-full shadow-md">
+          className="fixed z-40 xl:left-1/2 ml-600px flex items-center justify-center bottom-0 right-0 mr-10 mb-10 border cursor-pointer h-12 w-12 bg-white rounded-full shadow-md">
           <i className="iconfont icon-arrow-up"></i>
         </div>
       </CSSTransition>

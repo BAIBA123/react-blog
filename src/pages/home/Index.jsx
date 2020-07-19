@@ -32,7 +32,8 @@ export default class Home extends Component {
 
   swiperInit = () => {
     new Swiper(".swiper-container", {
-      loop: true, 
+      loop: true,
+      autoplay: true,
       pagination: {
         el: ".swiper-pagination",
       },
